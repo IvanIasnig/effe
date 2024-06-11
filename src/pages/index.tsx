@@ -1,5 +1,5 @@
+import HomePageEffe from "@/components/pages/HomePageEffe/HomePageEffe";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 
 export async function getStaticProps({ locale }: any) {
   return {
@@ -9,10 +9,12 @@ export async function getStaticProps({ locale }: any) {
   };
 }
 
-const Home = () => {
-  const { t } = useTranslation();
-
-  return <>{t("default:prova")}</>;
+const HomePage = () => {
+  return (
+    <>
+      <HomePageEffe />
+    </>
+  );
 };
 
-export default Home;
+export default HomePage;

@@ -1,0 +1,21 @@
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: black;
+  background-color: #fff7cc;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pw {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
