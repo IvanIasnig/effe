@@ -1,6 +1,6 @@
 .categoryCard {
   &_imageWrapper {
-    height: 400px;
+    height: 40vh;
     margin-bottom: 20px;
 
     &_image {
@@ -12,22 +12,31 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 3px 10px rgb(0, 0, 0);
+      }
 
       &_overlay {
         position: absolute;
+        border-radius: 20px;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.4);
         z-index: 1;
-      }
 
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
       &_title {
-        position: relative;
         font-size: 22px;
         font-weight: 700;
-        z-index: 2;
+        z-index: 1;
         text-align: center;
       }
     }

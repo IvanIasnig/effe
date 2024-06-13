@@ -1,0 +1,22 @@
+.footerHome {
+  position: sticky;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  transition: transform 0.3s;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  border-top: 1px rgb(146, 146, 146) solid;
+
+  > * {
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      fill: red;
+    }
+  }
+}
