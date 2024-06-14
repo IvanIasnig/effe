@@ -1,11 +1,20 @@
 import classNames from "classnames";
 import { ICategoryCard } from "./CategoryCard.models";
 import styles from "./CategoryCard.module.scss";
+import { useRouter } from "next/router";
 
 const CategoryCard = ({ image, title, href }: ICategoryCard) => {
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    router.push(href);
+  };
   return (
     <div className="pw">
-      <a href={href} className={classNames(styles.categoryCard)}>
+      <button
+        className={classNames(styles.categoryCard)}
+        onClick={handleRedirect}
+      >
         <div className={styles.categoryCard_imageWrapper}>
           <div
             className={styles.categoryCard_imageWrapper_image}
@@ -17,7 +26,7 @@ const CategoryCard = ({ image, title, href }: ICategoryCard) => {
             </div>
           </div>
         </div>
-      </a>
+      </button>
     </div>
   );
 };
