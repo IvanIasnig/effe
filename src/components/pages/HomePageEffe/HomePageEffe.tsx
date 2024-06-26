@@ -4,7 +4,6 @@ import CategoryCard from "@/components/common/CategoryCard/CategoryCard";
 import hair from "../../../assets/homePage/hair.jpg";
 import skin from "../../../assets/homePage/skin.jpg";
 import LogoEffe from "../../../assets/svg/logoEffe.svg";
-import FooterHome from "@/components/common/FooterHome/FooterHome";
 import { useTranslation } from "react-i18next";
 import {
   HairCarePageMetaData,
@@ -20,7 +19,7 @@ const HomePageEffe = () => {
       </div>
       <CategoryCard
         image={hair.src}
-        title={t("default:skin").toUpperCase()}                                                                                    
+        title={t("default:skin").toUpperCase()}
         href={SkinCarePageMetaData.path}
       />
       <CategoryCard
@@ -28,7 +27,6 @@ const HomePageEffe = () => {
         title={t("default:hair").toUpperCase()}
         href={HairCarePageMetaData.path}
       />
-      <FooterHome />
     </>
   );
 };

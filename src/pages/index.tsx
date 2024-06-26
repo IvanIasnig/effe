@@ -10,11 +10,7 @@ export async function getStaticProps({ locale }: any) {
 }
 
 const HomePage = () => {
-  return (
-    <>
-      <HomePageEffe />
-    </>
-  );
+  return <HomePageEffe />;
 };
 
 export default HomePage;

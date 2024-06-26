@@ -1,12 +1,12 @@
 import HairCare from "@/components/pages/HairCare/HairCare";
 import { NextPage } from "next";
 
-const HairCarePage: NextPage = () => {
+const SkinCarePage: NextPage = () => {
   return (
     <>
-      <HairCare />
+      <SkinCare />
     </>
   );
 };
 
-export default HairCarePage;
+export default SkinCarePage;

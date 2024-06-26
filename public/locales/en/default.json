@@ -1,1 +1,9 @@
-{"hair":"hair care","skin":"skin care"}
+{
+  "acneProne": "acneProne",
+  "dry": "dry",
+  "hair": "hair care",
+  "mixed": "mixed",
+  "sensitive": "sensitive",
+  "skin": "skin care",
+  "skinNormal": "normal"
+}
